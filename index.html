@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html manifest="manifest.json" lang="en">
+<html lang="en">
 <head>
+    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <!-- viewport no zoom -->
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" type="image/png" href="icon.png"></link>
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <title>Pmdr Tmr</title>
+    
     <!-- link to css file -->   
     <link rel="stylesheet" href="css/style.css">
     <!-- script async -->
     <script src="js/script.js" async></script>
+    
 </head>
 <body>
     <div id="tmr">
         <!-- simple ruler made with css-->
         <div class="ruler" >
-                <div class="delimiter"></div>
+                <div class="pre"></div>
                 <div class="big-line first"><span class="number">0</span></div>
                 <div class="small-line"></div>
                 <div class="small-line"></div>
@@ -65,7 +72,7 @@
                 <div class="small-line"></div>
                 <div class="small-line"></div>
                 <div class="big-line"><span class="number">60</span></div>
-                <div class="delimiter"></div>
+                <div class="post"></div>
         </div>
         <!-- simple icon triangle pointing up -->
         <div class="triangle"></div>
